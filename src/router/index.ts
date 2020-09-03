@@ -12,12 +12,12 @@ const routes: Array<RouteConfig> = [
   {
     path: '/note',
     name: 'note',
-    component: () => import('@/views/note/editor.vue'),
+    component: () => import('@/views/note/editor/main.vue'),
     children: [
       {
         path: 'editor',
         name: 'note.editor',
-        component: () => import('@/views/note/editor.vue')
+        component: () => import('@/views/note/editor/main.vue')
       }
     ]
   }
